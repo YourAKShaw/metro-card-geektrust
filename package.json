@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "geektrust",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "geektrust-project",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install",
+    "start": "node geektrust.js",
+    "start:sample": "node geektrust.js sample_input/input1.txt",
+    "test": "jest --coverage"
+  },
+  "author": "geektrust",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^30.0.0-beta.3",
+    "jest": "^29.7.0"
+  }
+}
