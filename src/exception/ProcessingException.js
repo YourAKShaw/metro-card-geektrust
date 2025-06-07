@@ -12,3 +12,5 @@ class ProcessingException extends Error {
     Error.captureStackTrace?.(this, ProcessingException);
   }
 }
+
+export default ProcessingException;
