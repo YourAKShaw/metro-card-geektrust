@@ -1,12 +1,16 @@
-import MetroCardServiceImpl from "./MetroCardServiceImpl.js";
-import CommandValidatorImpl from "../util/CommandValidatorImpl.js";
+import { jest } from "@jest/globals";
 
 // Mock the validator to avoid validation issues during testing
-jest.mock("../util/CommandValidatorImpl.js", () => {
-  return jest.fn().mockImplementation(() => ({
+jest.unstable_mockModule("../util/CommandValidatorImpl.js", () => ({
+  default: jest.fn().mockImplementation(() => ({
     validateCommand: jest.fn(), // Mock method that does nothing
-  }));
-});
+  })),
+}));
+
+// Import after mocking
+const { default: MetroCardServiceImpl } = await import(
+  "./MetroCardServiceImpl.js"
+);
 
 describe("MetroCardServiceImpl", () => {
   let service;

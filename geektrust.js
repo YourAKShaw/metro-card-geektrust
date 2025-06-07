@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 // geektrust.js - Main entry point for MetroCard project
-
 import CommandFileParser from "./src/util/CommandFileParser.js";
 import MetroCardServiceImpl from "./src/service/MetroCardServiceImpl.js";
 import path, { resolve } from "path";
@@ -22,13 +21,11 @@ async function main(args) {
     }
 
     const filePath = args[0];
-
     if (!fs.existsSync(filePath)) {
       throw new Error(`Input file does not exist: ${filePath}`);
     }
 
     await processMetroCard(filePath);
-    
   } catch (error) {
     console.error(error.message);
   }

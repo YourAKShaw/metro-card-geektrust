@@ -1,14 +1,11 @@
 export default {
   transform: {
-    '^.+\\.js$': 'babel-jest',
+    "^.+\\.js": "babel-jest",
   },
-  testEnvironment: 'node',
-  coverageDirectory: 'coverage',
+  testEnvironment: "node",
+  coverageDirectory: "coverage",
   collectCoverage: true,
-  collectCoverageFrom: [
-    'src/**/*.{js,jsx}',
-    'geektrust.js'
-  ],
+  collectCoverageFrom: ["src/**/*.{js,jsx}", "geektrust.js"],
   coverageThreshold: {
     global: {
       statements: 75,

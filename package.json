@@ -11,29 +11,12 @@
     "start:sample": "node geektrust.js sample_input/input1.txt",
     "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage"
   },
-  "jest": {
-    "preset": "default",
-    "extensionsToTreatAsEsm": [
-      ".js"
-    ],
-    "transform": {},
-    "testEnvironment": "node",
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "geektrust.js",
-      "!src/**/*.test.js",
-      "!src/**/*.spec.js"
-    ],
-    "coverageReporters": [
-      "text",
-      "lcov",
-      "html"
-    ]
-  },
   "author": "geektrust",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "babel-jest": "^30.0.0-beta.3",
     "jest": "^29.7.0"
   }
 }
