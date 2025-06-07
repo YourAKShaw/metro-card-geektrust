@@ -1,4 +1,4 @@
-import StaticConstants from "./static.js";
+import StaticConstants from "../constants/static.js";
 import JourneyCharge from "./JourneyCharge.js";
 
 /**
@@ -158,3 +158,5 @@ class CheckIn {
     );
   }
 }
+
+export default CheckIn;
