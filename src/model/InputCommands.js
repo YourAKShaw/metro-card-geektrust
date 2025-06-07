@@ -53,3 +53,5 @@ class InputCommands {
     );
   }
 }
+
+export default InputCommands;
