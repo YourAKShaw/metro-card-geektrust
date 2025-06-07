@@ -184,3 +184,5 @@ class Summary {
     this.orderByTypeCentral = orderList;
   }
 }
+
+export default Summary;
