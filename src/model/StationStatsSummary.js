@@ -129,9 +129,13 @@ class StationStatsSummary {
     if (this === obj) return true;
     if (!obj || !(obj instanceof StationStatsSummary)) return false;
 
-    return this.count === obj.count &&
-           this.passengerType === obj.passengerType &&
-           this.totalCharge === obj.totalCharge &&
-           this.totalDiscount === obj.totalDiscount;
+    return (
+      this.count === obj.count &&
+      this.passengerType === obj.passengerType &&
+      this.totalCharge === obj.totalCharge &&
+      this.totalDiscount === obj.totalDiscount
+    );
   }
 }
+
+export default StationStatsSummary;
