@@ -42,3 +42,5 @@ class Passenger {
     this.balanceInTheMetroCard = balanceInTheMetroCard;
   }
 }
+
+export default Passenger;
